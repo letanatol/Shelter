@@ -1,0 +1,40 @@
+@font-face {
+  font-display: swap;
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../../assets/fonts/Georgia-regular.woff2') format('woff2'),
+    url('../../assets/fonts/Georgia-regular.woff') format('woff');
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../../assets/fonts/Georgia-bold.woff2') format('woff2'),
+    url('../../assets/fonts/Georgia-regular.woff') format('woff');
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Georgia';
+  font-style: italic;
+  font-weight: 400;
+  src: url('../../assets/fonts/Georgia-italic.woff2') format('woff2'),
+    url('../../assets/fonts/Georgia-italic.woff') format('woff');
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../../assets/fonts/Arial-regular.woff2') format('woff2'),
+    url('../../assets/fonts/Arial-regular.woff') format('woff');
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Arial';
+  font-style: italic;
+  font-weight: 400;
+  src: url('../../assets/fonts/Arial-italic.woff2') format('woff2'),
+    url('../../assets/fonts/Arial-italic.woff') format('woff');
+}
