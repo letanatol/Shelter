@@ -94,7 +94,7 @@ li {
 }
 
 .header {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -197,24 +197,54 @@ h1 {
   max-width: 698px;
 }
 
+/*! about*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.about {
+.about__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 215px 100px;
 }
+
+.about__content {
+  max-width: 50%;
+}
+.about__content>*:not(:last-child){
+  margin-bottom: 25px;
+}
+
+h2 {
+  max-width: 370px;
+  margin-top: 14px;
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: #545454;
+}
+
+.about__text {
+  margin: 0;
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 160%;
+  color: #4C4C4C;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 .our-friends {}
 
