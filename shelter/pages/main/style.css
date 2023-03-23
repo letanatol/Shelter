@@ -55,7 +55,8 @@ html {
 
 h1,
 h2,
-h3 {
+h3,
+p {
   padding: 0;
   margin: 0;
   border: 0;
@@ -254,7 +255,7 @@ h2 {
 
 .our-friends__wrapper {
   padding-top: 80px;
-  padding-bottom: 100px;
+  padding-bottom: 95px;
 }
 
 .our-friends__title {
@@ -338,7 +339,49 @@ h2 {
   color: #292929;
   cursor: pointer;
   margin: 0 auto;
-    display: block;
+  display: block;
+}
+
+/*! section help*/
+
+.help {}
+
+
+.help__wrapper {
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+
+.help__title {
+  margin: 0 auto 60px;
+  max-width: 375px;
+}
+
+.help__title h2 {
+  text-align: center;
+}
+
+.help__container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 121px;
+  row-gap: 60px;
+}
+
+.help__item img {
+  display: block;
+  margin: 0 auto;
+}
+
+.help__text {
+  padding-top: 28px;
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
 }
 
 
@@ -348,7 +391,6 @@ h2 {
 
 
 
-.help {}
 
 .in-addition {}
 
