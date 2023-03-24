@@ -45,6 +45,7 @@
 
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -132,8 +133,8 @@ li {
 .nav__list {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 14px;
   padding: 0;
-  /* gap: 30px; */
 }
 
 .nav__list>*:not(:last-child) {
@@ -147,10 +148,29 @@ li {
   font-size: 15px;
   line-height: 160%;
   color: #CDCDCD;
+  transition: color 0.5s;
 }
 
-.nav__item_active {
+.nav__item_active a {
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 160%;
+  color: #FAFAFA;
   border-bottom: 3px solid #F1CDB3;
+}
+
+.nav__item a:hover {
+  cursor: pointer;
+  color: #FAFAFA;
+  transition: color 0.5s;
+}
+
+.nav__item a:active {
+  border-bottom: 3px solid #F1CDB3;
+  cursor: pointer;
+  color: #FAFAFA;
 }
 
 /*! section class="not-only"*/
@@ -193,9 +213,8 @@ h1 {
 }
 
 .not-only__button {
-  background: #F1CDB3;
+  border: 2px solid #F1CDB3;
   border-radius: 100px;
-  border: 0;
   padding: 15px 45px;
   font-family: 'Georgia';
   font-style: normal;
@@ -205,6 +224,12 @@ h1 {
   letter-spacing: 0.06em;
   color: #292929;
   cursor: pointer;
+  transition: background 0.5s;
+}
+
+.not-only__button:hover {
+  background: #F1CDB3;
+  transition: background 0.5s;
 }
 
 .not-only__image {
@@ -259,7 +284,7 @@ h2 {
 
 .our-friends__wrapper {
   padding-top: 80px;
-  padding-bottom: 95px;
+  padding-bottom: 100px;
 }
 
 .our-friends__title {
@@ -279,9 +304,17 @@ h2 {
 }
 
 .button__arrow {
-  border: 3px solid #F1CDB3;
+  border: 2px solid #F1CDB3;
   border-radius: 100px;
-  padding: 21px 19px;
+  padding: 22px 19px;
+  transition: background 0.5s;
+}
+
+.button__arrow:hover {
+  background: #FDDCC4;
+  border: 2px solid #FDDCC4;
+  cursor: pointer;
+  transition: background 0.5s;
 }
 
 .our-friends__carousel {
@@ -294,15 +327,21 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #FFFFFF;
+  background-color: #FAFAFA;
   border-radius: 9px;
   cursor: pointer;
   transition: all 0.5s;
 }
 
 .our-friends__card:hover {
-  background-color: #ececec;
+  background-color: #FFFFFF;
   box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+  transition: all 0.5s;
+}
+
+.our-friends__card:hover .button__learn-more {
+  background: #FDDCC4;
+  border: 2px solid #FDDCC4;
   transition: all 0.5s;
 }
 
@@ -328,7 +367,7 @@ h2 {
 }
 
 .button__learn-more {
-  border: 3px solid #F1CDB3;
+  border: 2px solid #F1CDB3;
   border-radius: 100px;
   padding: 12px 42px;
   font-family: 'Georgia';
@@ -339,12 +378,13 @@ h2 {
   letter-spacing: 0.06em;
   color: #292929;
   margin-bottom: 30px;
+  transition: all 0.5s;
 }
 
+
 .button__get-rest {
-  background: #F1CDB3;
+  border: 2px solid #F1CDB3;
   border-radius: 100px;
-  border: 0;
   padding: 15px 45px;
   font-family: 'Georgia';
   font-style: normal;
@@ -356,13 +396,20 @@ h2 {
   cursor: pointer;
   margin: 0 auto;
   display: block;
+  transition: background 0.5s;
+}
+
+.button__get-rest:hover {
+  background: #F1CDB3;
+  transition: background 0.5s;
+
 }
 
 /*! section help*/
 
 .help__wrapper {
   padding-top: 80px;
-  padding-bottom: 100px;
+  padding-bottom: 102px;
 }
 
 .help__title {
@@ -379,7 +426,7 @@ h2 {
   justify-content: center;
   flex-wrap: wrap;
   column-gap: 121px;
-  row-gap: 60px;
+  row-gap: 54px;
 }
 
 .help__item img {
@@ -405,11 +452,11 @@ h2 {
 .in-addition__wrapper {
   display: flex;
   justify-content: space-between;
-  padding: 80px 183px 96px;
+  padding: 78px 183px 99px;
 }
 
 .in-addition__image {
-  padding-top: 13px;
+  padding-top: 10px;
 }
 
 .in-addition__content {
@@ -418,7 +465,7 @@ h2 {
 
 .in-addition__title {
   max-width: 300px;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 .in-addition__text {
@@ -433,6 +480,7 @@ h2 {
   max-width: 346px;
   padding: 10px 15px;
   margin-bottom: 19px;
+  cursor: pointer;
 }
 
 .in-addition__card a {
@@ -487,11 +535,13 @@ h2 {
   align-items: center;
   margin: 44px 0;
 }
+
 .footer__location {
   display: flex;
   align-items: center;
   margin: 33px 0;
 }
+
 .footer__contact>*:not(:last-child) {
   margin-right: 20px;
 }
