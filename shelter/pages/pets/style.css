@@ -120,7 +120,6 @@ li {
 
 .subtitle {
   font-family: 'Arial', sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 13px;
   line-height: 15px;
@@ -147,7 +146,6 @@ li {
 
 .nav__item a {
   font-family: 'Arial';
-  font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 160%;
@@ -161,20 +159,20 @@ li {
   transition: color 0.5s;
 }
 
-.nav__item a:active {
+.nav__item:active {
   cursor: pointer;
   color: #292929;
   border-bottom: 3px solid #F1CDB3;
 }
-
+.nav__item_active{
+  border-bottom: 3px solid #F1CDB3;
+}
 .nav__item_active a {
   font-family: 'Arial';
-  font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 160%;
   color: #292929;
-  border-bottom: 3px solid #F1CDB3;
 }
 
 /*! our-friends*/
@@ -196,7 +194,6 @@ li {
 
 h1 {
   font-family: 'Georgia';
-  font-style: normal;
   font-weight: 400;
   font-size: 35px;
   line-height: 130%;
@@ -238,10 +235,9 @@ h1 {
 }
 
 .our-friends__name {
-  margin-bottom: 30px;
+  margin-bottom: 31px;
   text-align: center;
   font-family: 'Georgia';
-  font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 23px;
@@ -254,7 +250,6 @@ h1 {
   border-radius: 100px;
   padding: 12px 42px;
   font-family: 'Georgia';
-  font-style: normal;
   font-weight: 400;
   font-size: 17px;
   line-height: 130%;
@@ -275,7 +270,7 @@ h1 {
   justify-content: space-between;
   max-width: 340px;
   gap: 21px;
-  margin-bottom: 100px;
+  margin-bottom: 102px;
   align-items: center;
   font-size: 0;
 }
@@ -290,7 +285,6 @@ h1 {
 
 .paginator-inactive {
   font-family: 'Georgia';
-  font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 115%;
@@ -301,7 +295,6 @@ h1 {
 
 .paginator-numbers {
   font-family: 'Georgia';
-  font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 115%;
@@ -316,7 +309,6 @@ h1 {
 
 .paginator-active {
   font-family: 'Georgia';
-  font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 115%;
@@ -332,6 +324,7 @@ h1 {
 }
 
 /*! footer*/
+/*! footer*/
 
 .footer {
   background: url(../../assets/images/main/not-only-gradient.png),
@@ -344,14 +337,26 @@ h1 {
   padding-top: 41px;
 }
 
+.footer__content {
+  max-width: 279px;
+}
+
+.footer__content-map {
+  max-width: 303px;
+}
+
 .footer__title {
   margin-top: 16px;
-  max-width: 280px;
+  margin-bottom: 43px;
+}
+
+.footer__content-map .footer__title {
+  margin-top: 16px;
+  margin-bottom: 33px;
 }
 
 .footer__title h3 {
   font-family: 'Georgia';
-  font-style: normal;
   font-weight: 400;
   font-size: 35px;
   line-height: 130%;
@@ -362,13 +367,13 @@ h1 {
 .footer__contact {
   display: flex;
   align-items: center;
-  margin: 44px 0;
+  margin-bottom: 43px;
 }
 
 .footer__location {
   display: flex;
   align-items: center;
-  margin: 33px 0;
+  margin-bottom: 33px;
 }
 
 .footer__contact>*:not(:last-child) {
@@ -382,7 +387,6 @@ h1 {
 
 .footer__link {
   font-family: 'Georgia';
-  font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 115%;
