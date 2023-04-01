@@ -280,14 +280,24 @@ h1 {
   justify-content: space-between;
   padding: 80px 215px 100px;
 }
-@media (max-width: 880px) {
-.about__wrapper{
-  flex-direction: column-reverse;
-}
+
+@media (max-width: 1020px) {
+  .about__wrapper {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 63px 166px 100px;
+  }
 }
 
 .about__content {
   max-width: 50%;
+}
+
+@media (max-width: 880px) {
+  .about__content {
+    max-width: 100%;
+    margin-bottom: 82px;
+  }
 }
 
 .about__content>*:not(:last-child) {
@@ -371,6 +381,11 @@ h2 {
   border-radius: 9px;
   cursor: pointer;
   transition: all 0.5s;
+}
+@media (max-width: 880px) {
+.woody{
+  display: none;
+}
 }
 
 .our-friends__card:hover {
