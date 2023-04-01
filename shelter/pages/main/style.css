@@ -95,7 +95,7 @@ li {
   padding: 0 40px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1020px) {
   .wrapper {
     padding: 0 30px;
   }
@@ -285,15 +285,15 @@ h1 {
   .about__wrapper {
     flex-direction: column-reverse;
     align-items: center;
-    padding: 63px 166px 100px;
+    padding: 66px 169px 98px;
   }
 }
 
 .about__content {
-  max-width: 50%;
+  max-width: 50.5%;
 }
 
-@media (max-width: 880px) {
+@media (max-width: 1020px) {
   .about__content {
     max-width: 100%;
     margin-bottom: 82px;
@@ -356,7 +356,7 @@ h2 {
 .button__arrow {
   border: 2px solid #F1CDB3;
   border-radius: 100px;
-  padding: 22px 19px;
+  padding: 22px 17px;
   transition: background 0.5s;
 }
 
@@ -371,6 +371,13 @@ h2 {
   display: flex;
   flex: 1 1 auto;
   justify-content: space-around;
+  margin: 0 6px;
+}
+
+@media (max-width: 880px) {
+  .our-friends__carousel {
+    gap: 24px;
+  }
 }
 
 .our-friends__card {
@@ -382,10 +389,11 @@ h2 {
   cursor: pointer;
   transition: all 0.5s;
 }
-@media (max-width: 880px) {
-.woody{
-  display: none;
-}
+
+@media (max-width: 1020px) {
+  .woody {
+    display: none;
+  }
 }
 
 .our-friends__card:hover {
@@ -440,7 +448,7 @@ h2 {
   border: 2px solid #F1CDB3;
   background: #F1CDB3;
   border-radius: 100px;
-  padding: 15px 45px;
+  padding: 14px 44px;
   font-family: 'Georgia';
   font-weight: 400;
   font-size: 17px;
@@ -463,30 +471,51 @@ h2 {
 /*! section help*/
 
 .help__wrapper {
-  padding-top: 80px;
-  padding-bottom: 102px;
+  padding: 80px 30px 102px;
+  /* padding-bottom: 102px; */
+}
+
+@media (max-width: 880px) {
+  .help__wrapper {
+    padding: 80px 37px 102px;
+  }
 }
 
 .help__title {
-  margin: 0 auto 60px;
+  margin: 0 auto 59px;
   max-width: 375px;
 }
 
 .help__title h2 {
   text-align: center;
+  line-height: 128%;
 }
 
 .help__container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  column-gap: 121px;
-  row-gap: 54px;
+  column-gap: 120px;
+  row-gap: 55px;
+}
+
+@media (max-width: 880px) {
+  .help__container {
+    text-align: center;
+    column-gap: 0px;
+    row-gap: 55px;
+  }
 }
 
 .help__item img {
   display: block;
   margin: 0 auto;
+}
+
+@media (max-width: 880px) {
+  .help__item {
+    flex-basis: 33%;
+  }
 }
 
 .help__text {
@@ -506,7 +535,15 @@ h2 {
 .in-addition__wrapper {
   display: flex;
   justify-content: space-between;
-  padding: 78px 183px 99px;
+  padding: 79px 183px 101px;
+}
+
+@media (max-width: 1020px) {
+  .in-addition__wrapper {
+    flex-direction: column-reverse;
+    padding: 0 0 101px 0;
+    align-items: center;
+  }
 }
 
 .in-addition__image {
@@ -514,16 +551,28 @@ h2 {
 }
 
 .in-addition__content {
-  max-width: 41%;
+  max-width: 41.5%;
+}
+
+@media (max-width: 1020px) {
+  .in-addition__content {
+    max-width: 100%;
+    padding: 80px 194px 48px;
+  }
 }
 
 .in-addition__title {
   max-width: 300px;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
 }
 
 .in-addition__text {
   margin-bottom: 20px;
+  font-family: 'Georgia';
+  font-size: 15px;
+  line-height: 110%;
+  letter-spacing: 0.06em;
+  color: #545454;
 }
 
 .in-addition__card {
@@ -531,8 +580,8 @@ h2 {
   justify-content: space-between;
   background: #F1CDB3;
   border-radius: 9px;
-  max-width: 346px;
-  padding: 10px 15px;
+  max-width: 349px;
+  padding: 10px 14px;
   margin-bottom: 19px;
   cursor: pointer;
 }
@@ -568,22 +617,39 @@ h2 {
   padding-top: 41px;
 }
 
+@media (max-width: 1020px) {
+  .footer__wrapper {
+    flex-wrap: wrap;
+    padding: 14px 63px 0;
+
+  }
+}
+
 .footer__content {
   max-width: 281px;
+}
+
+.footer__content>*:not(:last-child) {
+  margin-bottom: 43px;
 }
 
 .footer__content-map {
   max-width: 303px;
 }
 
+.footer__content-map>*:not(:last-child){
+  margin-bottom: 33px;
+}
+
+
 .footer__title {
   margin-top: 16px;
-  margin-bottom: 43px;
+  /* margin-bottom: 43px; */
 }
 
 .footer__content-map .footer__title {
   margin-top: 16px;
-  margin-bottom: 33px;
+  /* margin-bottom: 33px; */
 }
 
 .footer__title h3 {
@@ -598,13 +664,13 @@ h2 {
 .footer__contact {
   display: flex;
   align-items: center;
-  margin-bottom: 43px;
+  /* margin-bottom: 43px; */
 }
 
 .footer__location {
   display: flex;
   align-items: center;
-  margin-bottom: 33px;
+  /* margin-bottom: 33px; */
 }
 
 .footer__contact>*:not(:last-child) {
@@ -623,4 +689,11 @@ h2 {
   line-height: 115%;
   letter-spacing: 0.06em;
   color: #F1CDB3;
+}
+
+@media (max-width: 1020px) {
+  .footer__image {
+    margin: 0 auto;
+    padding-top: 64px;
+  }
 }
