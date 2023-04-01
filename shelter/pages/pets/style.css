@@ -94,7 +94,16 @@ li {
   margin: 0 auto;
   padding: 0 40px;
 }
-
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 0 30px;
+  }
+}
+@media (max-width: 320px) {
+  .wrapper {
+    padding: 0 10px;
+  }
+}
 /*! header*/
 .header__wrapper {
   display: flex;
