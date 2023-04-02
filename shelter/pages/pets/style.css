@@ -153,17 +153,16 @@ li {
   color: #252525;
   transition: color 0.5s;
 }
-@media (max-width: 767px) {
-  .header__nav {
-    display: none;
-  }
-}
 .nav__list {
   display: flex;
   flex-wrap: wrap;
   padding: 0;
 }
-
+@media (max-width: 767px) {
+  .nav__list {
+    display: none;
+  }
+}
 .nav__list>*:not(:last-child) {
   margin-right: 36px;
 }
@@ -200,7 +199,53 @@ li {
   line-height: 160%;
   color: #292929;
 }
+/*! hamburger*/
 
+.hamburger {
+  display: none;
+  position: relative;
+  width: 30px;
+  height: 22px;
+}
+
+@media (max-width: 767px) {
+  .hamburger {
+    display: inline-block;
+  }
+}
+
+.hamburger__line {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  height: 2px;
+  width: 100%;
+  background-color: #000000;
+  top: calc(50% - 1px);
+  left: 0;
+}
+
+.hamburger::before {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  height: 2px;
+  width: 100%;
+  background-color: #000000;
+  top: 0;
+  left: 0;
+}
+
+.hamburger::after {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  height: 2px;
+  width: 100%;
+  background-color: #000000;
+  bottom: 0;
+  left: 0;
+}
 /*! our-friends*/
 
 .our-friends {
@@ -251,6 +296,12 @@ h1{
   .our-friends__content {
     padding: 0 64px;
     margin-bottom: 12px;
+  }
+}
+
+@media (max-width: 740px) {
+  .our-friends__content {
+    justify-content: center;
   }
 }
 @media (max-width: 320px) {
@@ -341,7 +392,7 @@ h1{
   margin-bottom: 78px;
 }
 }
-@media (max-width: 320px) {
+@media (max-width: 380px) {
   .our-friends__paginator {
     gap: 10px;
     margin-bottom: 48px;

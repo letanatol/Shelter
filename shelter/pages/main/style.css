@@ -146,17 +146,18 @@ li {
   color: #FFFFFF;
 }
 
-@media (max-width: 767px) {
-  .header__nav {
-    display: none;
-  }
-}
 
 .nav__list {
   display: flex;
   flex-wrap: wrap;
   margin-top: 14px;
   padding: 0;
+}
+
+@media (max-width: 767px) {
+  .nav__list {
+    display: none;
+  }
 }
 
 .nav__list>*:not(:last-child) {
@@ -194,6 +195,51 @@ li {
   font-size: 15px;
   line-height: 160%;
   color: #FAFAFA;
+}
+
+/*! hamburger*/
+
+.hamburger {
+  display: none;
+  position: relative;
+  width: 30px;
+  height: 22px;
+}
+@media (max-width: 767px) {
+.hamburger{
+  display: inline-block;
+}
+}
+.hamburger__line {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  height: 2px;
+  width: 100%;
+  background-color: #F1CDB3;
+  top: calc(50% - 1px);
+  left: 0;
+}
+
+.hamburger::before {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  height: 2px;
+  width: 100%;
+  background-color: #F1CDB3;
+  top: 0;
+  left: 0;
+}
+.hamburger::after {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  height: 2px;
+  width: 100%;
+  background-color: #F1CDB3;
+  bottom: 0;
+  left: 0;
 }
 
 /*! section class="not-only"*/
@@ -916,11 +962,13 @@ h2 {
   margin-top: 16px;
   /* margin-bottom: 33px; */
 }
+
 @media (max-width: 320px) {
-.footer__content-map .footer__title {
+  .footer__content-map .footer__title {
     margin-top: 6px;
   }
 }
+
 .footer__title h3 {
   font-family: 'Georgia';
   font-weight: 400;
