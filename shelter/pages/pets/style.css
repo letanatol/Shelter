@@ -115,11 +115,13 @@ li {
   align-items: center;
   margin-bottom: 30px;
 }
+
 @media (max-width: 320px) {
-.header__wrapper{
-  padding: 0 20px;
+  .header__wrapper {
+    padding: 0 20px;
+  }
 }
-}
+
 .header {
   width: 100%;
   padding-top: 30px;
@@ -143,26 +145,32 @@ li {
   color: #292929;
   transition: color 0.5s;
 }
+
 @media (max-width: 320px) {
-.subtitle{
-  letter-spacing: 0.1em;
+  .subtitle {
+    letter-spacing: 0.1em;
+  }
 }
-}
+@media(hover: hover){
 .header__logo a:hover .title,
 .subtitle {
   color: #252525;
   transition: color 0.5s;
 }
+}
+
 .nav__list {
   display: flex;
   flex-wrap: wrap;
   padding: 0;
 }
+
 @media (max-width: 767px) {
   .nav__list {
     display: none;
   }
 }
+
 .nav__list>*:not(:last-child) {
   margin-right: 36px;
 }
@@ -175,11 +183,12 @@ li {
   color: #545454;
   transition: color 0.5s;
 }
-
+@media(hover: hover){
 .nav__item a:hover {
   color: #292929;
   cursor: pointer;
   transition: color 0.5s;
+}
 }
 
 .nav__item:active {
@@ -199,6 +208,7 @@ li {
   line-height: 160%;
   color: #292929;
 }
+
 /*! hamburger*/
 
 .hamburger {
@@ -246,6 +256,7 @@ li {
   bottom: 0;
   left: 0;
 }
+
 /*! our-friends*/
 
 .our-friends {
@@ -258,6 +269,12 @@ li {
   align-items: center;
 }
 
+@media (max-width: 768px) {
+  .our-friends__wrapper {
+    padding: 0 10px;
+  }
+}
+
 .our-friends__title {
   text-align: center;
   padding: 80px 0 60px;
@@ -268,10 +285,13 @@ li {
     padding-bottom: 30px;
   }
 }
+
 @media (max-width: 320px) {
   .our-friends__title {
-  padding: 41px 0 42px ;}
+    padding: 41px 0 42px;
+  }
 }
+
 h1 {
   font-family: 'Georgia';
   font-weight: 400;
@@ -280,11 +300,13 @@ h1 {
   letter-spacing: 0.06em;
   color: #545454;
 }
+
 @media (max-width: 320px) {
-h1{
-  font-size: 25px;
+  h1 {
+    font-size: 25px;
+  }
 }
-}
+
 .our-friends__content {
   display: flex;
   flex-wrap: wrap;
@@ -299,14 +321,22 @@ h1{
   }
 }
 
+@media (max-width: 880px) {
+  .our-friends__content {
+    justify-content: space-around;
+  }
+}
+
 @media (max-width: 740px) {
   .our-friends__content {
     justify-content: center;
+    padding: 0 15px;
   }
 }
+
 @media (max-width: 320px) {
   .our-friends__content {
-    padding: 0 15px;
+    /* padding: 0 15px; */
   }
 }
 
@@ -321,23 +351,32 @@ h1{
   transition: all 0.5s;
 }
 
-.our-friends__card:hover {
-  background-color: #FFFFFF;
-  box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
-  transition: all 0.5s;
+@media(hover: hover) {
+  .our-friends__card:hover {
+    background-color: #FFFFFF;
+    box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+    transition: all 0.5s;
+  }
 }
 
-@media (max-width: 768px) {
-  .scarlett, .freddie {
+
+@media (max-width: 1160px) {
+
+  .scarlett,
+  .freddie {
     display: none;
   }
 }
 
 @media (max-width: 320px) {
-  .sophia, .timmy, .charly {
+
+  .sophia,
+  .timmy,
+  .charly {
     display: none;
   }
 }
+
 .our-friends__image {
   margin-bottom: 30px;
 }
@@ -372,32 +411,39 @@ h1{
   transition: all 0.5s;
 }
 
-.our-friends__card:hover .button__learn-more {
-  background: #FDDCC4;
-  border: 2px solid #FDDCC4;
-  transition: all 0.5s;
+@media(hover: hover) {
+  .our-friends__card:hover .button__learn-more {
+    background: #FDDCC4;
+    border: 2px solid #FDDCC4;
+    transition: all 0.5s;
+  }
 }
+
 
 .our-friends__paginator {
   display: flex;
   justify-content: space-between;
+  width: 100%;
   max-width: 340px;
-  gap: 21px;
+  /* gap: 21px; */
   margin-bottom: 102px;
   align-items: center;
   font-size: 0;
 }
+
 @media (max-width: 768px) {
-.our-friends__paginator{
-  margin-bottom: 78px;
+  .our-friends__paginator {
+    margin-bottom: 78px;
+  }
 }
-}
+
 @media (max-width: 380px) {
   .our-friends__paginator {
-    gap: 10px;
+    /* gap: 10px; */
     margin-bottom: 48px;
   }
 }
+
 .our-friends__btn {
   width: 52px;
   height: 52px;
@@ -427,8 +473,10 @@ h1{
   border: 2px solid #F1CDB3;
 }
 
-.paginator-numbers:hover {
-  cursor: pointer;
+@media(hover: hover) {
+  .paginator-numbers:hover {
+    cursor: pointer;
+  }
 }
 
 .paginator-active {
@@ -441,13 +489,13 @@ h1{
   border: 2px solid #F1CDB3;
   transition: background 0.5s;
 }
-
+@media(hover: hover){
 .paginator-active:hover {
   background: #F1CDB3;
   cursor: pointer;
   transition: background 0.5s;
 }
-
+}
 /*! footer*/
 .footer {
   background: url(../../assets/images/main/not-only-gradient.png),

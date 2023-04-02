@@ -173,11 +173,14 @@ li {
   transition: color 0.5s;
 }
 
-.nav__item a:hover {
-  cursor: pointer;
-  color: #FAFAFA;
-  transition: color 0.5s;
+@media(hover: hover) {
+  .nav__item a:hover {
+    cursor: pointer;
+    color: #FAFAFA;
+    transition: color 0.5s;
+  }
 }
+
 
 .nav__item:active {
   border-bottom: 3px solid #F1CDB3;
@@ -205,11 +208,13 @@ li {
   width: 30px;
   height: 22px;
 }
+
 @media (max-width: 767px) {
-.hamburger{
-  display: inline-block;
+  .hamburger {
+    display: inline-block;
+  }
 }
-}
+
 .hamburger__line {
   content: '';
   position: absolute;
@@ -231,6 +236,7 @@ li {
   top: 0;
   left: 0;
 }
+
 .hamburger::after {
   content: '';
   position: absolute;
@@ -344,12 +350,14 @@ h1 {
   cursor: pointer;
   transition: all 0.5s;
 }
-
+@media(hover: hover){
 .not-only__button:hover {
-  background: #FDDCC4;
-  border-color: #FDDCC4;
-  transition: all 0.5s;
+    background: #FDDCC4;
+    border-color: #FDDCC4;
+    transition: all 0.5s;
+  }
 }
+
 
 @media (max-width: 880px) {
   .not-only__image {
@@ -517,13 +525,15 @@ h2 {
   padding: 22px 17px;
   transition: background 0.5s;
 }
-
+@media(hover: hover){
 .button__arrow:hover {
-  background: #FDDCC4;
-  border: 2px solid #FDDCC4;
-  cursor: pointer;
-  transition: background 0.5s;
+    background: #FDDCC4;
+    border: 2px solid #FDDCC4;
+    cursor: pointer;
+    transition: background 0.5s;
+  }
 }
+
 
 .our-friends__carousel {
   display: flex;
@@ -566,14 +576,13 @@ h2 {
     display: none;
   }
 }
-
-.our-friends__card:hover {
-  background-color: #FFFFFF;
-  box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
-  transition: all 0.5s;
+@media(hover: hover){
+  .our-friends__card:hover {
+      background-color: #FFFFFF;
+      box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+      transition: all 0.5s;
+    }
 }
-
-
 
 .our-friends__image {
   margin-bottom: 30px;
@@ -608,12 +617,14 @@ h2 {
   margin-bottom: 30px;
   transition: all 0.5s;
 }
-
+@media(hover: hover){
 .our-friends__card:hover .button__learn-more {
-  background: #FDDCC4;
-  border: 2px solid #FDDCC4;
-  transition: all 0.5s;
+    background: #FDDCC4;
+    border: 2px solid #FDDCC4;
+    transition: all 0.5s;
+  }
 }
+
 
 .button__get-rest {
   border: 2px solid #F1CDB3;
@@ -631,13 +642,14 @@ h2 {
   display: block;
   transition: all 0.5s;
 }
-
+@media(hover: hover){
 .button__get-rest:hover {
-  background: #FDDCC4;
-  border-color: #FDDCC4;
-  transition: all 0.5s;
-
+    background: #FDDCC4;
+    border-color: #FDDCC4;
+    transition: all 0.5s;
+  }
 }
+
 
 /*! section help*/
 
