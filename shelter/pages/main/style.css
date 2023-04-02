@@ -911,11 +911,16 @@ h2 {
   /* margin-bottom: 43px; */
 }
 
+
 .footer__content-map .footer__title {
   margin-top: 16px;
   /* margin-bottom: 33px; */
 }
-
+@media (max-width: 320px) {
+.footer__content-map .footer__title {
+    margin-top: 6px;
+  }
+}
 .footer__title h3 {
   font-family: 'Georgia';
   font-weight: 400;
